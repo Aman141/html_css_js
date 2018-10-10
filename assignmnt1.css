@@ -1,39 +1,36 @@
 * {
   box-sizing: border-box;
 }
-h1 
+
+
+h1
 {
-	text-align: center
+	text-align: center;
+	margin-bottom: 50px
 }
-div{
-margin-top: 50px; }
-p {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+div.col-lg-4 ,div.col-md-6 ,div.col-sw-12, #special {
+position: relative;
+background-color: gray;
+margin-left:2px;
+margin-bottom:20px
+ }
+
+p.two {
+  width: 100%;
+  height: 100%;
   font-family: Helvetica;
   color: black;
   padding: 10px; 
-  position: relative;
+  background-color: gray;
+  margin-top: 20px;
 }
-.p1,#one{ background-color: pink; width:40%; }
-.p1 ,#two{ background-color: red; width: 40%}
-.p1, #three{ background-color: yellow; width: 40%}
-.p2{ background-color:gray;  margin-top: 0; } 
-q {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 5px;
-  border: 1px solid black;
-  font-family: Helvetica;
-  color: black;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-decoration:none;
-}
+
+p#one{ background-color: pink; }
+p#two{ background-color: red; }
+p#three{ background-color: yellow;}
+
+p.one { width:40%; height:30px; margin:0; position:absolute; right:0; top:0; border: 1px solid black; text-align:center; padding: 5px }
+
 
 
 
@@ -44,7 +41,7 @@ q {
 
 @media (min-width: 992px)
 {
-	.col-lg-4 {width: 33.33% ;
+	.col-lg-4 {width: 33% ; border: 1px solid black;
 	           float: left; 
 			   
 			
@@ -53,14 +50,14 @@ q {
 
 @media (min-width: 768px) and (max-width: 991px)
 {
-	.col-md-6 {width: 50% ; 
+	.col-md-6 {width: 49.7% ; border: 1px solid black;
 	float: left;}
-	#third { width: 100% ;  float: left; }
+	#special { width: 100% ;  float: left; border: 1px solid black; }
 }
 
 
-@media (max-width: 767px){}
+@media (max-width: 767px)
 {
 	.col-sw-12{ width: 100% ; 
-                float: left;	}
+                float: left; border: 1px solid black;	}
 }
